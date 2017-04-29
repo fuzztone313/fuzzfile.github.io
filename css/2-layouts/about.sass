@@ -1,0 +1,183 @@
+.glitch-long
+    font-size: 2.5em
+    font-weight: 600
+    border-left: 15px solid #9c27b0
+    height: 95px
+    padding: 25px
+    margin-top: 10px
+    margin-bottom: 40px
+    width: 100%
+    color: #fff
+    background: #383838
+    position: relative
+    @media (max-width: 320px)
+        font-size: 2.1em
+
+
+.glitch-long:after 
+    content: attr(data-text)
+    position: absolute
+    left: 26px
+    text-shadow: -1px 0 red
+    top: 20
+    color: white
+    background: #383838
+    overflow: hidden
+    clip: rect(0, 900px, 0, 0)
+    animation: noise-anim 2s infinite linear alternate-reverse
+
+.glitch-long:before 
+    content: attr(data-text)
+    position: absolute
+    left: 22px
+    text-shadow: 1px 0 blue
+    top: 20
+    color: white
+    background: #383838
+    overflow: hidden
+    clip: rect(0, 900px, 0, 0)
+    animation: noise-anim-2 3s infinite linear alternate-reverse
+
+
+@keyframes noise-anim 
+    0% 
+        clip: rect(84px, 9999px, 3px, 0)
+
+    5% 
+        clip: rect(38px, 9999px, 60px, 0)
+
+    10% 
+        clip: rect(70px, 9999px, 48px, 0)
+
+    15% 
+        clip: rect(88px, 9999px, 8px, 0)
+
+    20% 
+        clip: rect(73px, 9999px, 44px, 0)
+
+    25% 
+        clip: rect(25px, 9999px, 43px, 0)
+
+    30% 
+        clip: rect(65px, 9999px, 47px, 0)
+
+    35% 
+        clip: rect(97px, 9999px, 29px, 0)
+
+    40% 
+        clip: rect(76px, 9999px, 73px, 0)
+
+    45% 
+        clip: rect(20px, 9999px, 11px, 0)
+
+    50% 
+        clip: rect(9px, 9999px, 17px, 0)
+
+    55% 
+        clip: rect(38px, 9999px, 86px, 0)
+
+    60% 
+        clip: rect(98px, 9999px, 88px, 0)
+
+    65% 
+        clip: rect(78px, 9999px, 48px, 0)
+
+    70% 
+        clip: rect(94px, 9999px, 26px, 0)
+
+    75% 
+        clip: rect(76px, 9999px, 93px, 0)
+
+    80% 
+        clip: rect(22px, 9999px, 33px, 0)
+
+    85% 
+        clip: rect(35px, 9999px, 60px, 0)
+
+    90% 
+        clip: rect(70px, 9999px, 45px, 0)
+
+    95% 
+        clip: rect(48px, 9999px, 52px, 0)
+
+    100% 
+        clip: rect(76px, 9999px, 49px, 0)
+
+@keyframes noise-anim-2 
+    0% 
+        clip: rect(62px, 9999px, 25px, 0)
+
+    5% 
+        clip: rect(23px, 9999px, 86px, 0)
+
+    10% 
+        clip: rect(86px, 9999px, 95px, 0)
+
+    15% 
+        clip: rect(34px, 9999px, 87px, 0)
+
+    20% 
+        clip: rect(13px, 9999px, 69px, 0)
+
+    25% 
+        clip: rect(2px, 9999px, 68px, 0)
+
+    30% 
+        clip: rect(46px, 9999px, 99px, 0)
+
+    35% 
+        clip: rect(53px, 9999px, 81px, 0)
+
+    40% 
+        clip: rect(73px, 9999px, 89px, 0)
+
+    45% 
+        clip: rect(61px, 9999px, 85px, 0)
+
+    50% 
+        clip: rect(26px, 9999px, 79px, 0)
+
+    55% 
+        clip: rect(42px, 9999px, 45px, 0)
+
+    60% 
+        clip: rect(15px, 9999px, 65px, 0)
+
+    65% 
+        clip: rect(19px, 9999px, 37px, 0)
+
+    70% 
+        clip: rect(62px, 9999px, 13px, 0)
+
+    75% 
+        clip: rect(12px, 9999px, 16px, 0)
+
+    80% 
+        clip: rect(70px, 9999px, 47px, 0)
+
+    85% 
+        clip: rect(100px, 9999px, 7px, 0)
+
+    90% 
+        clip: rect(22px, 9999px, 84px, 0)
+
+    95% 
+        clip: rect(87px, 9999px, 67px, 0)
+
+    100% 
+        clip: rect(64px, 9999px, 61px, 0)
+    
+.img-wraper
+    margin-bottom: 25px
+    
+.img-fx
+    filter: contrast(50%) drop-shadow(10px 10px 10px #383838)
+    transition: 400ms
+    
+    &:hover
+        filter: contrast(100%)
+        transition: 400ms
+
+    
+
+    
