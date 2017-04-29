@@ -43,19 +43,19 @@ function backHome (){
 
 function title (){
     
-        var message = "Please Back :(";
-        var original;
+var message = "Please Back :(";
+var original;
 
-        $(window).focus(function() {
-            if (original) {
-                document.title = original;
-            }
-        }).blur(function() {
-            var title = $('title').text();
-            if (title != message) {
-                original = title;
-            }
-            document.title = message;
-        }); 
+$(window).focus(function() {
+    if (original) {
+	document.title = original;
+    }
+}).blur(function() {
+    var title = $('title').text();
+    if (title != message) {
+	original = title;
+    }
+    document.title = message;
+}); 
 }
 
